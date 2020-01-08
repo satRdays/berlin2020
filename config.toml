@@ -1,14 +1,11 @@
 # Site settings
-baseurl = "https://eventtemplate.satrdays.org" # Change this to the base url after netlify deploy, e.g. "https://cardiff2019.satrdays.org/"
+baseurl = "https://berlin2019.satrdays.org/"
 languageCode = "en-us"
-title = "satRday"
+title = "satRday Berlin"
 theme = ["hugo-satrdays-theme", "hugo-agency-theme"]
 
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
-
-# Disable taxonomies that are not used https://discourse.gohugo.io/t/found-no-layout-for-taxonomyterm-language-en-output-format-html/16376
-disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
   # You can use Markdown syntax for urls [text](//url.to/source) or
@@ -20,8 +17,8 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
   # To provide some metadata for search engines feel free to add a few
   # information about you and your website.
-  name = "satRday [My City]"
-  description = "R conference in [My City]"
+  name = "satRday Berlin"
+  description = "R conference in Berlin"
   # email = "your@email.com"
 
   # Link custom assets relative to /static
@@ -32,6 +29,12 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   # Possibility to disable external/additional fonts
   # Exception: Fontawesome
   disableFonts = false
+
+  # meta stuff for share links
+  meta_title = "satRday Berlin"
+  meta_image = "/img/flyer.jpg"
+  meta_description = "A conference for R users in Berlin"
+  meta_url = "https://berlin2019.satrdays.org/"
 
   # 404 error customization
   [params.error404]
@@ -80,24 +83,24 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
   [params.hero]
     # To change the background image of the hero, replace 'header-bg.jpg' in
     # the 'static/img' folder.
-    title = "satRday [My City]"
-    subtitle = "A conference for users of the R Language on [Conference Date]"
+    title = "satRday Berlin"
+    subtitle = "June 2020"
     bg = true
-    buttonText = "Tell me more"
+    buttonText = "Learn more"
 
 
   # About [Services] section
   [params.services]
     enable = true
     title = "About"
-    subtitle = "Conference Details"
+    subtitle = ""
 
     [[params.services.row]]
 
     [[params.services.row.list]]
       icon = "fa-clock-o"
       title = "Details"
-      description = "[Conference Date] at [Conference Location]"
+      description = "June 2020 in Berlin"
       url = "#"
 
     [[params.services.row.list]]
@@ -114,14 +117,14 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
     [[params.services.row.list]]
       icon = "fa-users"
-      title = "Community Lead"
-      description = "Community organised, community focussed"
+      title = "Community-led"
+      description = "Community organised, community focused"
       url = "#"
 
     [[params.services.row.list]]
       icon = "fa-money"
       title = "Affordable"
-      description = "Only [£30]"
+      description = "Include student and scholarship ttickets"
       url = "#"
 
     [[params.services.row.list]]
@@ -132,59 +135,27 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
   # Register section
   # You only need ONE of these active
-  [params.tito]
-    enable = true
-    title = "Register"
-    bg = true
-    accountevent = "ultimateconf/2013"
-      # Go to https://ti.to/ and find the account (under your user) and event pair string e.g. "cardiff-satrday/2018"
-      # include botht the account and event in a string, seperated by /, with no spaces
-
-  [params.eventbrite]
-    enable = true
-    title = "Register"
-    bg = true
-    eid = "32416000129" 
-      # Go to https://www.eventbrite.co.uk/support/articles/en_US/How_To/how-to-sell-eventbrite-tickets-registrations-on-your-website-using-embeddable-widgets?lg=en_GB 
-      # Follow instructions to discover your 'Website Integration' embeddable iframe
-      # Take ONLY the numeric string between "eid=" and "&ref=etckt"
-      # Supply this string as the value to `eid` above
-
   [params.tickettailor]
-    enable = true
+    enable = false
     title = "Register"
     bg = true
-    eventviewid = "162430"
+    eventviewid = "265492"
       # Go to www.tickettailor.com and open your event page
       # Note the number at the end of the url e.g. https://www.tickettailor.com/event/view/id/162430
       # Supply the number ONLY in `eventviewid`
   
   # Call for papers section
   [params.callforpapers]
-    enable = true
+    enable = false
     title = "Call For Papers"
     bg = false
-    CfSpage = "/test3490"
+    CfSpage = "/satrday-berlin-2019"
       # Go to Organizer > My Events > Dashboard and copy the "CfS Page" string into the `CfSpage` value
-    dates = "09 Aug - 21 Sep 2018"
-  
-  # Hackathon section
-  [params.hackathon]
-    enable = true
-    bg = false
-    title = "Hackathon"
-    subtitle="Can you _Hack_ it?"
-    brief1="You _can_ put markdown in the briefs section" 
-    brief2="But you __MUST__ hardcode html links <a href= 'www.google.com' > google  </a> for further info."
-    location= "The place we're going it"
-    dates = "15 November 2019"
-    times= "13:00-17:30"  
-    website_name="google"
-    website_url="www.google.com"
+    dates = "25 Mar - 25 Apr 2019"
 
   # Talk [Portfolio] section
   [params.portfolio]
-    enable = true
+    enable = false
     # All projects defined in their own files. You can find example projects
     # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
     # at the root of this Hugo site.
@@ -201,13 +172,13 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
   # Schedule section
   [params.schedule]
-    enable = true
+    enable = false
     title = "Schedule"
     bg = false
 
   # Important Dates [About] section
   [params.about]
-    enable = true
+    enable = false
     title = "Important Dates"
     subtitle = "Be prepared!"
     endpoint = "Conference"
@@ -221,124 +192,173 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
       title = "Initial Announcement"
       description = "We're organising a conference!"
 
-    [[params.about.events]]
-      img = "2.jpg"
-      date = "Second Date"
-      title = "Early Bird Ticket Sales"
-      description = "Early round of tickets now available at discount"
+    # Add more events like so:
+    # [[params.about.events]]
+    #   img = "2.jpg"
+    #   date = "Second Date"
+    #   title = "Early Bird Ticket Sales"
+    #   description = "Early round of tickets now available at discount"
 
-    [[params.about.events]]
-      img = "3.jpg"
-      date = "Third Date"
-      title = "Call For Papers"
-      description = "Submissions for speakers are now open!"
-
-    [[params.about.events]]
-      img = "4.jpg"
-      date = "Fourth Date"
-      title = "Call For Papers Ends"
-      description = "Cut off date for speaker submissions"
   
   # Location section
   [params.location]
     enable = true
-    title = "Location title"
+    title = "Location"
+    # subtitle = "Hosted at the Hertie School of Governance"
     bg = true
-    iframesrc = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12770.336629178193!2d174.7680403!3d-36.8524341!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x868a73f26ed3e621!2sDepartment+of+Statistics%2C+University+of+Auckland!5e0!3m2!1sen!2suk!4v1533231461829"
+    # Hertie
+    # iframesrc="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.1408082536695!2d13.387034915807199!3d52.512790779812825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a850541e7e4e7d%3A0x461522e1c392f16!2sHertie+School+of+Governance!5e0!3m2!1sen!2sde!4v1553282110986"
+    # Berlin
+    iframesrc="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d310843.464212058!2d13.144547556065293!3d52.5069312440442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin!5e0!3m2!1sen!2sde!4v1578522257296!5m2!1sen!2sde"
 
   # Team section
   [params.team]
-    enable = true
+    enable = false
     # Possibility to center items
-    #center = true
+    center = true
     title = "Team"
     subtitle = "The people putting it together"
     bg = false
     description = ""
-    speakers = "Speakers"
+    speakers = ""
     
 
     # All team member's pictures are stored under 'static/img/team'.
     # Replace them with your own too.
     # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
     [[params.team.members]]
-      img = "faceholder.png"
-      name = "Organiser Name 1"
-      position = "Organiser Position 1"
+      img = "noa.jpeg"
+      name = "Noa Tamir"
+      position = "Director of Data Science at [AUTO1](https://www.auto1-group.com/), [RLadies Berlin](https://www.meetup.com/rladies-berlin/) organiser"
       reportsTo = ""
-      livesIn = "[Munich, Germany](#some-maps-url)"
-      scope = [
-        "Role 1 for [thing 1](#)",
-        "Role 2 for [thing 2](#)",
-        "Role 3 for [thing 3](#)"
-      ]
+      # livesIn = "[Munich, Germany](#some-maps-url)"
+      # scope = [
+      #   "Role 1 for [thing 1](#)",
+      #   "Role 2 for [thing 2](#)",
+      #   "Role 3 for [thing 3](#)"
+      # ]
       # For bio markdown and even multiline strings are available.
-      bio = """I do things,
-      and stuff"""
+      # bio = """I do things,
+      # and stuff"""
       social = [
-        ["fa-twitter", "#"],
-        ["fa-github", "#"],
-        ["fa-linkedin", "#"]
+        ["fa-twitter", "https://twitter.com/noatamir"],
+        # ["fa-github", "#"],
+        ["fa-linkedin", "https://www.linkedin.com/in/noatamir/"],
+        ["fa-home", "http://www.noatamir.com/"]
       ]
 
     [[params.team.members]]
-      img = "faceholder.png"
-      name = "Organiser Name 2"
-      position = "Organiser Position 2"
+      img = "steve.jpeg"
+      name = "Steve Cunningham"
+      position = "Data Analyst at [ResearchGate](https://www.researchgate.net/)"
       social = [
-        ["fa-twitter", "#"],
-        ["fa-github", "#"],
-        ["fa-linkedin", "#"]
+        # ["fa-twitter", "#"],
+        # ["fa-github", "#"],
+        ["fa-linkedin", "https://www.linkedin.com/in/stephen-cunningham-a75286104/"]
       ]
 
     [[params.team.members]]
-      img = "faceholder.png"
-      name = "Organiser Name 3"
-      position = "Organiser Position 3"
+      img = "sonia.jpeg"
+      name = "Sonia Boender"
+      position = "Infectious Disease Epidemiologist & Public Health Researcher at the [Robert Koch Institute](https://www.rki.de/) & [European Centre for Disease Prevention and Control](https://ecdc.europa.eu)"
       social = [
-        ["fa-twitter", "#"],
-        ["fa-github", "#"],
-        ["fa-linkedin", "#"]
+        ["fa-twitter", "https://twitter.com/SoniaBoender"],
+        # ["fa-github", "#"],
+        ["fa-linkedin", "https://www.linkedin.com/in/soniaboender/"]
       ]
+
+    [[params.team.members]]
+      img = "alison.jpeg"
+      name = "Alison Holland"
+      position = "UX Researcher at [GameDuell](https://www.gameduell.com/)"
+      social = [
+        ["fa-linkedin", "https://www.linkedin.com/in/alison-holland-2a329119/"]
+      ]
+
+    [[params.team.members]]
+      img = "david.jpeg"
+      name = "David Pardo"
+      position = "Data Scientist at [Medwing](https://www.medwing.com/)"
+      social = [
+        ["fa-linkedin", "https://www.linkedin.com/in/david-pardo-5b947420/"],
+        ["fa-twitter", "https://twitter.com/DavidPardoB"]
+      ]
+
+    [[params.team.members]]
+      img = "vadim.jpg"
+      name = "Vadim Voskresenskii"
+      position = "Research Assistant at [Weizenbaum Institute for the Networked Society](https://vernetzung-und-gesellschaft.de/english/)"
+      social = [
+        ["fa-linkedin", "https://www.linkedin.com/in/vadim-voskresenskiy-9405b9a8/"],
+        ["fa-github", "https://github.com/voskresenskiy"]
+      ]
+
+    [[params.team.members]]
+      img = "daniela.jpeg"
+      name = "Daniela Ordonez"
+      position = "Tranformation partner at [Europace AG](https://www.europace.de/)"
+      social = [
+        ["fa-linkedin", "https://www.linkedin.com/in/danordacu/"],
+      ]
+
+    [[params.team.members]]
+      img = "ali.jpeg"
+      name = "Aliakbar Akbaritabar"
+      position = "Postdoctoral Researcher at [German Centre for Higher Education Research and Science Studies (DZHW)](https://www.dzhw.eu/)"
+      social = [
+        ["fa-linkedin", "https://www.linkedin.com/in/akbaritabar/"],
+        ["fa-github", "https://github.com/akbaritabar"],
+        ["fa-twitter", "https://twitter.com/Akbaritabar"]
+      ]
+
 
   # Client section
   [params.clients_list]
-    enable = true
+    enable = false
     # Possibility to center items
-    #center = true
+    center = true
     # Optional client title specifying the involvement
     title = "Sponsors"
+    subtitle = "satRday Berlin is made possible by"
     bg = true
 
     # All the clients' logos are stored under 'static/img/logos'.
     # Replace them with your clients's logos.
     # Suggestion: .svg in the size of 280px*80px looks good
-    [[params.clients]]
-      logo = "envato.jpg"
-      link = "#"
+    [[params.clients_tier1]]
+      logo = "auto1.png"
+      link = "https://www.auto1-group.com/"
 
-    [[params.clients]]
-      logo = "designmodo.jpg"
-      link = "#"
+    [[params.clients_tier2]]
+      logo = "europace.jpg"
+      link = "https://www.europace.de/"
 
-    [[params.clients]]
-      logo = "themeforest.jpg"
-      link = "#"
+    [[params.clients_tier2]]
+      logo = "rconsortium.png"
+      link = "https://www.r-consortium.org/"
 
-    [[params.clients]]
-      logo = "creative-market.jpg"
-      link = "#"
+    [[params.clients_tier3]]
+      logo = "rstudio.png"
+      link = "https://www.rstudio.com/"
+
+    [[params.clients_tier3]]
+      logo = "jumpingrivers.png"
+      link = "https://www.jumpingrivers.com/"
   
   [params.diversity]
     enable = true
-    title = "Diversity"
+    title = "Our Code of conduct"
+    bg = true
+  
+  [params.inclusion]
+    enable = true
     bg = true
 
   # Contact section
   [params.contact]
     enable = true
     title = "Contact us"
-    subtitle  = "Lorem ipsum dolor sit amet consectetur."
+    subtitle  = "Any questions? Want to get involved? Write to us!"
     buttonText = "Send message"
     # netlify = true
 
@@ -360,7 +380,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     # add some custom JS script to finish the implementation.
     # postURL = "https://example.com/mailout/"
 
-    email = "your@email.com"
+    email = "satrday.berlin@gmail.com"
 
     # Success and error message overwrite for async contact form
     #thanks = "Thank you for awesomely contacting us."
@@ -371,19 +391,19 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
     # 'warning' defines error messages for invalid inputs
     [params.contact.form.name]
-      text = "Your Name *"
+      text = "Your Name (required)"
       warning = "Please enter your name."
 
     [params.contact.form.email]
-      text = "Your Email *"
+      text = "Your Email (required)"
       warning = "Please enter your email address."
 
     [params.contact.form.phone]
-      text = "Your Phone *"
+      text = "Your Phone (required)"
       warning = "Please enter your phone number."
 
     [params.contact.form.message]
-      text = "Your Message *"
+      text = "Your Message (required)"
       warning = "Please enter a message."
 
       # Add optional form fields to identify contact forms
@@ -412,8 +432,12 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
     [[params.footer.quicklinks]]
       text = "Privacy Policy"
-      link = "#"
+      link = "privacy"
 
     [[params.footer.quicklinks]]
-      text = "Terms of Use"
-      link = "#"
+      text = "Impressum"
+      link = "impressum"
+
+    # [[params.footer.quicklinks]]
+    #   text = "Terms of Use"
+    #   link = "#"

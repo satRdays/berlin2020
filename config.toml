@@ -123,8 +123,8 @@ googleAnalytics = ""
 
     [[params.services.row.list]]
       icon = "fa-money"
-      title = "Affordable"
-      description = "Include student and scholarship ttickets"
+      title = "Affordable tickets"
+      description = "Including student and scholarships"
       url = "#"
 
     [[params.services.row.list]]

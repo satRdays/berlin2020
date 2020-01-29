@@ -1,0 +1,61 @@
+{{ "<!-- Clients Aside -->" | safeHTML }}
+<section class="clients">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">{{ with .Site.Params.clients_list.title }}{{ . | markdownify }}{{ end }}</h2>
+        <h3 class="section-subheading text-mutedwith ">{{ with .Site.Params.clients_list.subtitle }}{{ . | markdownify }}{{ end }}</h3>
+      </div>
+    </div>
+    <div class="row flexbox{{ if .Site.Params.clients_list.center }} flexbox-center{{ end }}">
+      <div class="col-md-12 col-sm-12 col">
+
+        {{ range .Site.Params.clients_tier1 }}
+        <div class="col-lg-12 col-md-12 col-sm-12 col clients">
+          {{ $url := printf "img/logos/%s" .logo }}
+          {{ if .link }}
+          <a href="{{ .link }}">
+            <img src="{{ $url | absURL }}" class="img-responsive img-centered client-tier-1" alt="">
+          </a>
+          {{ else }}
+          <img src="{{ $url | absURL }}" class="img-responsive img-centered client-tier-1" alt="">
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+
+
+      <div class="col-lg-12 col-md-12 col-sm-12 col clients">
+        {{ range .Site.Params.clients_tier2 }}
+        <div class="col-lg-6 col-md-6 col-sm-6 col">
+          {{ $url := printf "img/logos/%s" .logo }}
+          {{ if .link }}
+          <a href="{{ .link }}">
+            <img src="{{ $url | absURL }}" class="img-responsive img-centered client-tier-2" alt="">
+          </a>
+          {{ else }}
+          <img src="{{ $url | absURL }}" class="img-responsive img-centered client-tier-2" alt="">
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+
+      <div class="col-lg-12 col-md-12 col-sm-12 col clients">
+
+        {{ range .Site.Params.clients_tier3 }}
+        <div class="col-lg-4 col-md-4 col-sm-6 col">
+          {{ $url := printf "img/logos/%s" .logo }}
+          {{ if .link }}
+          <a href="{{ .link }}">
+            <img src="{{ $url | absURL }}" class="img-responsive img-centered client-tier-3" alt="">
+          </a>
+          {{ else }}
+          <img src="{{ $url | absURL }}" class="img-responsive img-centered client-tier-3" alt="">
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+
+    </div>
+  </div>
+</section>

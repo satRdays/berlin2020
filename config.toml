@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "https://berlin2019.satrdays.org/"
+baseurl = "https://berlin2020.satrdays.org/"
 languageCode = "en-us"
 title = "satRday Berlin"
 theme = ["hugo-satrdays-theme", "hugo-agency-theme"]
@@ -34,7 +34,7 @@ googleAnalytics = ""
   meta_title = "satRday Berlin"
   meta_image = "/img/flyer.jpg"
   meta_description = "A conference for R users in Berlin"
-  meta_url = "https://berlin2019.satrdays.org/"
+  meta_url = "https://berlin2020.satrdays.org/"
 
   # 404 error customization
   [params.error404]

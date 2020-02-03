@@ -58,10 +58,10 @@ header {
     /* background-position: center left; */
 }
 
-#Shade{
-    background-color:rgba(0,9,0,0.2); 
-    width:100%; 
-    height:100%;
+#Shade {
+    background-color: rgba(0, 9, 0, 0.2);
+    width: 100%;
+    height: 100%;
 }
 
 .navbar-default {
@@ -257,7 +257,7 @@ h4 {
     font-size: 1.6em;
 }
 
-#location > div > div.row > div > h3 {
+#location>div>div.row>div>h3 {
     margin-bottom: 20px;
 }
 
@@ -455,6 +455,7 @@ p.ps {
     .Talk {
         flex: 0 1 96%;
     }
+
     .Talk-image {
         width: 120px;
     }
@@ -579,6 +580,19 @@ section {
     transition: all 0.3s;
 }
 
+.btn-contact {
+    color: #fed136;
+}
+
+.btn-contact:hover {
+    color: #fed136 !important;
+    opacity: 1;
+}
+
+section#contact h3.section-subheading.text-muted {
+    font-size: 1.6em;
+    color: #fed136;
+}
 
 /* Button 4 */
 
@@ -668,9 +682,9 @@ header .intro-text .intro-heading {
 }
 
 canvas {
-    position:absolute;
-    top:0;
-    left:0;   
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 @media(max-width: 1024px) {
@@ -680,9 +694,11 @@ canvas {
         font-style: normal;
         text-align: left;
     }
+
     header .intro-text {
         text-align: left;
     }
+
     header .intro-text .intro-heading {
         text-transform: none;
         font-size: 5rem;
@@ -697,11 +713,13 @@ canvas {
         font-size: 1.6rem;
         margin-bottom: 1rem;
     }
+
     header .intro-text .intro-heading {
         font-size: 2.2rem;
         line-height: 1.6;
         margin-bottom: 1rem;
     }
+
     header .intro-text a .btn {
         padding: 15px 50px;
     }
@@ -749,8 +767,10 @@ blockquote {
 }
 
 .team-member img {
-    height:20vh;
+    height: 20vh;
     width: 20vh;
 }
 
-
+.team-bio a:hover {
+    color: #2165B6;
+}

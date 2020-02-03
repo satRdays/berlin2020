@@ -93,51 +93,58 @@ googleAnalytics = ""
     subtitle = "June 2020"
     bg = true
     buttonText = "Learn more"
+    buttonTarget = "#services" # default: #services
 
 
   # About [Services] section
   [params.services]
     enable = true
-    title = "About"
+    title = "satRday Berlin"
     subtitle = ""
 
     [[params.services.row]]
 
     [[params.services.row.list]]
+      enable = false
       icon = "fa-clock-o"
       title = "Details"
       description = "June 2020 in Berlin"
       url = "#"
 
     [[params.services.row.list]]
+      enable = false
       icon = "fa-laptop"
       title = "Hands on"
       description = "Practical applications and workshop sessions"
       url = "#"
 
     [[params.services.row.list]]
+      enable = false
       icon = "fa-graduation-cap"
       title = "Learning"
       description = "Gain knowledge from your peers and experienced professionals"
       url = "#"
 
     [[params.services.row.list]]
+      enable = true
       icon = "fa-users"
       title = "Community-led"
       description = "Community organised, community focused"
-      url = "#"
+      url = ""
 
     [[params.services.row.list]]
+      enable = true
       icon = "fa-money"
       title = "Affordable tickets"
       description = "Including student and scholarships"
-      url = "#"
+      url = ""
 
     [[params.services.row.list]]
+      enable = true
       icon = "fa-universal-access"
       title = "Accessible"
       description = "Inclusive, supportive and respectful environment"
-      url = "#"
+      url = "#code-of-conduct-preview"
 
   # Register section
   # You only need ONE of these active
@@ -209,7 +216,7 @@ googleAnalytics = ""
   # Location section
   [params.location]
     enable = true
-    title = "Location"
+    title = "Location: tba"
     # subtitle = "Hosted at the Hertie School of Governance"
     bg = true
     # Hertie
@@ -340,21 +347,21 @@ googleAnalytics = ""
 
     [[params.footer.social]]
       icon = "fa-twitter"
-      link = "https://twitter.com/satrdays_org"
+      link = "https://twitter.com/satRdayBerlin"
       title = "Twitter"
 
     [[params.footer.social]]
       icon = "fa-github"
-      link = "https://github.com/satRdays"
+      link = "https://github.com/satRdays/berlin2020"
       title = "GitHub"
 
     [[params.footer.quicklinks]]
       text = "Privacy Policy"
-      link = "privacy"
+      link = "/privacy"
 
     [[params.footer.quicklinks]]
       text = "Impressum"
-      link = "impressum"
+      link = "/impressum"
 
     # [[params.footer.quicklinks]]
     #   text = "Terms of Use"

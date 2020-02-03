@@ -12,7 +12,7 @@ members:
   #       - "https://twitter.com/dummy"
   - name: "Aliakbar Akbaritabar"
     img: "ali.jpg"
-    bio: "Postdoctoral Researcher at [German Centre for Higher Education Research and Science Studies (DZHW)](https://www.dzhw.eu/en/gmbh/mitarbeiter?m_id=829). I am computational social scientist using R, Python and other computational tools to study the social aspect of science and networks of scientific collaboration."
+    bio: "Postdoctoral Researcher at [German Centre for Higher Education Research and Science Studies (DZHW)](https://www.dzhw.eu/en/gmbh/mitarbeiter?m_id=829)."
     social:
       - - fa-linkedin
         - "https://www.linkedin.com/in/akbaritabar/"
@@ -21,8 +21,9 @@ members:
       - - fa-twitter
         - "https://twitter.com/Akbaritabar"
 
-  - name: "Brian"
-    img: "avatar.png"
+  - name: "Brian Callander"
+    img: "brian.jpeg"
+    bio: "Senior Data Analyst at [ResearchGate](https://www.researchgate.net/)"
 
   - name: "Daniela"
     img: "doa.jpg"
@@ -41,8 +42,7 @@ members:
 
   - name: "Dimity"
     img: "dimity.jpg"
-    bio: "Post-doctoral researcher at German Center for Higher Education Research and Science Studies (DZHW)
-"
+    bio: "Post-doctoral researcher at [German Center for Higher Education Research and Science Studies (DZHW)](https://www.dzhw.eu/gmbh/mitarbeiter?m_id=819)"
     social:
       - - fa-twitter
         - "https://twitter.com/DimityStephen"
@@ -63,7 +63,7 @@ members:
 
   - name: "Juan"
     img: "juan.jpg"
-    bio: "Mathematician & Senior Data Scientist @HelloFresh"
+    bio: "Mathematician & Senior Data Scientist at [HelloFresh](https://www.hellofresh.de/)"
     social:
       - - fa-twitter
         - "https://twitter.com/juanitorduz"
@@ -97,14 +97,14 @@ members:
 
   - name: "Steve Cunningham"
     img: "steve.jpeg"
-    bio: "Data Analyst at [ResearchGate](https://www.researchgate.net/)"
+    bio: "Senior Data Analyst at [ResearchGate](https://www.researchgate.net/)"
     social:
       - - fa-linkedin
         - "https://www.linkedin.com/in/stephen-cunningham-a75286104/"
 
   - name: "Tania"
     img: "tania.jpg"
-    bio: "Data Scientist @Babbel"
+    bio: "Data Scientist at [Babbel](https://de.babbel.com/)"
     social:
       - - fa-twitter
         - "https://twitter.com/tvasi"
@@ -115,7 +115,7 @@ members:
 
   - name: "Vadim Voskresenskii"
     img: "vadim.jpg"
-    bio: "Research Assistant at [Weizenbaum Institute for the Networked Society](https://vernetzung-und-gesellschaft.de/english/). I am doing research on political communication in social media. I am actively using R for text analysis and data visualisation"
+    bio: "Research Assistant at [Weizenbaum Institute for the Networked Society](https://vernetzung-und-gesellschaft.de/english/)."
     social:
       - - fa-linkedin
         - "https://www.linkedin.com/in/vadim-voskresenskiy-9405b9a8/"

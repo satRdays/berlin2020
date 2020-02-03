@@ -42,7 +42,7 @@ ol, ul {
 }
 
 .text-muted {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .container>section:first-of-type {
@@ -731,19 +731,10 @@ blockquote {
     margin-left: 1em;
 }
 
-#conduct p {
-    /* font-size: 1.4em; */
-    padding: 0 15px;
-}
-
 #code-of-conduct, #diversity {
     max-width: 970px;
     margin-left: auto;
     margin-right: auto;
-}
-
-#code-of-conduct p, #diversity p {
-    /* font-size: 1.4em; */
 }
 
 #code-of-conduct li, #diversity li {
@@ -767,6 +758,9 @@ blockquote {
 }
 
 @media(max-width: 768px) {
+    p {
+        font-size: 1.4em;
+    }
     .team-member {
         display: block;
     }
@@ -780,8 +774,4 @@ blockquote {
 
 .team-bio a:hover {
     color: #2165B6;
-}
-
-.team-bio {
-    font-size: 1em;
 }

@@ -40,11 +40,7 @@
     {{ end }}
 
     {{ if .Site.Params.location.enable }}
-      {{ partial "location.html" . }}
-    {{ end }}
-
-    {{ if .Site.Params.team.enable }}
-      {{ partial "team.html" . }}
+    {{ partial "location" . }}
     {{ end }}
 
     {{ if .Site.Params.clients_list.enable }}

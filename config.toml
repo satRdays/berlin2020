@@ -59,7 +59,7 @@ googleAnalytics = ""
     portfolio = "Talks"
     eventbrite = "Register"
     schedule = "Schedule"
-    team = "People"
+    # team = "Team"
     contact = "Get involved"
 
     # Add custom links. Those can be pre- and postpended to the default menu above.
@@ -73,10 +73,16 @@ googleAnalytics = ""
     #  weight = 10
 
     # postpended links
+
+    [[menu.postpend]]
+      url = "/team"
+      name = "team"
+      weight = 10
+
     [[menu.postpend]]
       url = "http://satrdays.org/"
       name = "satRdays.org"
-      weight = 10
+      weight = 20
 
 
   # Hero section
@@ -211,9 +217,10 @@ googleAnalytics = ""
     # Berlin
     iframesrc="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d310843.464212058!2d13.144547556065293!3d52.5069312440442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin!5e0!3m2!1sen!2sde!4v1578522257296!5m2!1sen!2sde"
 
-  # Team section
+# Team section
+# Moved to standalone page /team
   [params.team]
-    enable = false
+    enable = true
     # Possibility to center items
     center = true
     title = "Team"
@@ -221,97 +228,7 @@ googleAnalytics = ""
     bg = false
     description = ""
     speakers = ""
-    
-
-    # All team member's pictures are stored under 'static/img/team'.
-    # Replace them with your own too.
-    # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
-    [[params.team.members]]
-      img = "noa.jpeg"
-      name = "Noa Tamir"
-      position = "Director of Data Science at [AUTO1](https://www.auto1-group.com/), [RLadies Berlin](https://www.meetup.com/rladies-berlin/) organiser"
-      reportsTo = ""
-      # livesIn = "[Munich, Germany](#some-maps-url)"
-      # scope = [
-      #   "Role 1 for [thing 1](#)",
-      #   "Role 2 for [thing 2](#)",
-      #   "Role 3 for [thing 3](#)"
-      # ]
-      # For bio markdown and even multiline strings are available.
-      # bio = """I do things,
-      # and stuff"""
-      social = [
-        ["fa-twitter", "https://twitter.com/noatamir"],
-        # ["fa-github", "#"],
-        ["fa-linkedin", "https://www.linkedin.com/in/noatamir/"],
-        ["fa-home", "http://www.noatamir.com/"]
-      ]
-
-    [[params.team.members]]
-      img = "steve.jpeg"
-      name = "Steve Cunningham"
-      position = "Data Analyst at [ResearchGate](https://www.researchgate.net/)"
-      social = [
-        # ["fa-twitter", "#"],
-        # ["fa-github", "#"],
-        ["fa-linkedin", "https://www.linkedin.com/in/stephen-cunningham-a75286104/"]
-      ]
-
-    [[params.team.members]]
-      img = "sonia.jpeg"
-      name = "Sonia Boender"
-      position = "Infectious Disease Epidemiologist & Public Health Researcher at the [Robert Koch Institute](https://www.rki.de/) & [European Centre for Disease Prevention and Control](https://ecdc.europa.eu)"
-      social = [
-        ["fa-twitter", "https://twitter.com/SoniaBoender"],
-        # ["fa-github", "#"],
-        ["fa-linkedin", "https://www.linkedin.com/in/soniaboender/"]
-      ]
-
-    [[params.team.members]]
-      img = "alison.jpeg"
-      name = "Alison Holland"
-      position = "UX Researcher at [GameDuell](https://www.gameduell.com/)"
-      social = [
-        ["fa-linkedin", "https://www.linkedin.com/in/alison-holland-2a329119/"]
-      ]
-
-    [[params.team.members]]
-      img = "david.jpeg"
-      name = "David Pardo"
-      position = "Data Scientist at [Medwing](https://www.medwing.com/)"
-      social = [
-        ["fa-linkedin", "https://www.linkedin.com/in/david-pardo-5b947420/"],
-        ["fa-twitter", "https://twitter.com/DavidPardoB"]
-      ]
-
-    [[params.team.members]]
-      img = "vadim.jpg"
-      name = "Vadim Voskresenskii"
-      position = "Research Assistant at [Weizenbaum Institute for the Networked Society](https://vernetzung-und-gesellschaft.de/english/)"
-      social = [
-        ["fa-linkedin", "https://www.linkedin.com/in/vadim-voskresenskiy-9405b9a8/"],
-        ["fa-github", "https://github.com/voskresenskiy"]
-      ]
-
-    [[params.team.members]]
-      img = "daniela.jpeg"
-      name = "Daniela Ordonez"
-      position = "Tranformation partner at [Europace AG](https://www.europace.de/)"
-      social = [
-        ["fa-linkedin", "https://www.linkedin.com/in/danordacu/"],
-      ]
-
-    [[params.team.members]]
-      img = "ali.jpeg"
-      name = "Aliakbar Akbaritabar"
-      position = "Postdoctoral Researcher at [German Centre for Higher Education Research and Science Studies (DZHW)](https://www.dzhw.eu/)"
-      social = [
-        ["fa-linkedin", "https://www.linkedin.com/in/akbaritabar/"],
-        ["fa-github", "https://github.com/akbaritabar"],
-        ["fa-twitter", "https://twitter.com/Akbaritabar"]
-      ]
-
-
+  
   # Client section
   [params.clients_list]
     enable = false

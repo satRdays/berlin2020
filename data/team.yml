@@ -1,0 +1,123 @@
+---
+members:
+  # - name: "firstname name"
+  #   img: "avatar.png"
+  #   bio: "bio"
+  #   social:
+  #     - - fa-linkedin
+  #       - "https://www.linkedin.com/in/dummy/"
+  #     - - fa-github
+  #       - "https://github.com/dummy"
+  #     - - fa-twitter
+  #       - "https://twitter.com/dummy"
+  - name: "Aliakbar Akbaritabar"
+    img: "ali.jpg"
+    bio: "Postdoctoral Researcher at [German Centre for Higher Education Research and Science Studies (DZHW)](https://www.dzhw.eu/en/gmbh/mitarbeiter?m_id=829). I am computational social scientist using R, Python and other computational tools to study the social aspect of science and networks of scientific collaboration."
+    social:
+      - - fa-linkedin
+        - "https://www.linkedin.com/in/akbaritabar/"
+      - - fa-github
+        - "https://github.com/akbaritabar"
+      - - fa-twitter
+        - "https://twitter.com/Akbaritabar"
+
+  - name: "Brian"
+    img: "avatar.png"
+
+  - name: "Daniela"
+    img: "doa.jpg"
+    bio: "Freelance Consultant Data Analytics, Research, Innovation"
+
+  - name: "David Pardo"
+    img: "david.jpg"
+    bio: "Data Scientist at [Medwing](https://www.medwing.com/)"
+    social:
+      - - fa-twitter
+        - "https://twitter.com/DavidPardoB"
+      - - fa-github
+        - "https://github.com/davidpb90/"
+      - - fa-linkedin
+        - "https://www.linkedin.com/in/david-pardo-5b947420/"
+
+  - name: "Dimity"
+    img: "dimity.jpg"
+    bio: "Post-doctoral researcher at German Center for Higher Education Research and Science Studies (DZHW)
+"
+    social:
+      - - fa-twitter
+        - "https://twitter.com/DimityStephen"
+      - - fa-home
+        - "https://www.dzhw.eu/gmbh/mitarbeiter?m_id=819"
+
+  - name: "Ilja Sperling"
+    img: "ilja.jpg"
+    bio: "Freelance Product Designer & Tech Lead [Ranking Digital Rights](https://rankingdigitalrights.org/)
+"
+    social:
+      - - fa-twitter
+        - "https://twitter.com/fubits"
+      - - fa-linkedin
+        - "https://www.linkedin.com/in/ilja-sperling/"
+      - - fa-home
+        - "https://dadascience.design/portfolio/"
+
+  - name: "Juan"
+    img: "juan.jpg"
+    bio: "Mathematician & Senior Data Scientist @HelloFresh"
+    social:
+      - - fa-twitter
+        - "https://twitter.com/juanitorduz"
+      - - fa-github
+        - "https://github.com/juanitorduz"
+      - - fa-linkedin
+        - "https://www.linkedin.com/in/juanitorduz/"
+      - - fa-home
+        - "https://juanitorduz.github.io/"
+
+  - name: "Noa Tamir"
+    img: "noa.jpg"
+    bio: "Freelance Data Scientist and Analytics Consultant;<br/>Core member of [R Forwards](forwards.github.io); [Certified instructor, RStudio](https://education.rstudio.com/trainers/people/tamir+noa)
+"
+    social:
+      - - fa-twitter
+        - "https://twitter.com/noatamir"
+      - - fa-linkedin
+        - "https://www.linkedin.com/in/noatamir/"
+      - - fa-github
+        - "github.com/noatmair"
+
+  # - name: "Sonia Boender"
+  #   img: "sonia.jpeg"
+  #   bio: "Infectious Disease Epidemiologist & Public Health Researcher at the [Robert Koch Institute](https://www.rki.de/) & [European Centre for Disease Prevention and Control](https://ecdc.europa.eu)"
+  #   social:
+  #     - - fa-twitter
+  #       - "https://twitter.com/SoniaBoender"
+  #     - - fa-linkedin
+  #       - "https://www.linkedin.com/in/soniaboender/"
+
+  - name: "Steve Cunningham"
+    img: "steve.jpeg"
+    bio: "Data Analyst at [ResearchGate](https://www.researchgate.net/)"
+    social:
+      - - fa-linkedin
+        - "https://www.linkedin.com/in/stephen-cunningham-a75286104/"
+
+  - name: "Tania"
+    img: "tania.jpg"
+    bio: "Data Scientist @Babbel"
+    social:
+      - - fa-twitter
+        - "https://twitter.com/tvasi"
+      - - fa-linkedin
+        - "https://www.linkedin.com/in/taniavasilikioti/"
+      - - fa-github
+        - "https://github.com/tvasil/"
+
+  - name: "Vadim Voskresenskii"
+    img: "vadim.jpg"
+    bio: "Research Assistant at [Weizenbaum Institute for the Networked Society](https://vernetzung-und-gesellschaft.de/english/). I am doing research on political communication in social media. I am actively using R for text analysis and data visualisation"
+    social:
+      - - fa-linkedin
+        - "https://www.linkedin.com/in/vadim-voskresenskiy-9405b9a8/"
+      - - fa-github
+        - "https://github.com/voskresenskiy"

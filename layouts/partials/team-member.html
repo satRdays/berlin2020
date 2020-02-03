@@ -1,0 +1,18 @@
+<div class="col-sm-4 col">
+    <div class="team-member">
+        {{ $url := printf "img/team/%s" .img }}
+        <img src="{{ $url | absURL }}" class="img-responsive img-circle" alt="{{ .name }}">
+        <h3>{{ .name | markdownify }}</h3>
+
+        <h4>{{ .position | markdownify }}</h4>
+
+        <ul class="list-inline social-buttons">
+            {{ range .social }}
+            <li><a href="{{ index . 1 }}"><i class="fa {{ index . 0 }}"></i></a></li>
+            {{ end }}
+        </ul>
+
+        <p class="team-bio">{{ .bio | markdownify }}</p>
+
+    </div>
+</div>

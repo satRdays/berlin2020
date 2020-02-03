@@ -51,12 +51,12 @@
       {{ partial "contact.html" . }}
     {{ end }}
 
-    {{ if .Site.Params.diversity.enable }}
-      {{ partial "diversity.html" . }}
+    {{ if .Site.Params.contact.enable }}
+    {{ partial "contact" . }}
     {{ end }}
 
-    {{ if .Site.Params.inclusion.enable }}
-      {{ partial "inclusion.html" . }}
+    {{ if .Site.Params.conduct.enable }}
+    {{ partial "code-of-conduct-preview" . }}
     {{ end }}
 
     {{ if .Site.Params.footer.enable }}

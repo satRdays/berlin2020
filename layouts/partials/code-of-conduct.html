@@ -1,129 +1,171 @@
 {{ "<!-- Conduct -->" | safeHTML }}
 <div class="container">
 
-    <section id="code-of-conduct" {{ if .Site.Params.conduct.bg }} class="bg-light-gray" {{ end }}>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">{{ with .Site.Params.conduct.title }}{{ . | markdownify }}{{ end }}</h2>
-            </div>
-            <div>
+  <section id="code-of-conduct" {{ if .Site.Params.conduct.bg }}
+    class="bg-light-gray" {{ end }}>
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">
+          {{ with .Site.Params.conduct.title }}{{ . | markdownify }}{{ end }}
+        </h2>
+      </div>
+      <div>
 
-                <!-- <h2 id="code-of-conduct">Code of Conduct</h2> -->
+        <!-- <h2 id="code-of-conduct">Code of Conduct</h2> -->
 
-                <p>SatRdays is dedicated to providing a harassment-free experience for everyone. We do not tolerate
-                    harassment of
-                    participants in any form.</p>
+        <p>SatRdays is dedicated to providing a harassment-free experience for
+          everyone. We do not tolerate
+          harassment of
+          participants in any form.</p>
 
-                <p>This code of conduct applies to all satRdays spaces, including meetups, Twitter, Slack, mailing
-                    lists, both online
-                    and offline. Anyone who violates this code of conduct may be sanctioned or expelled from these
-                    spaces at the
-                    discretion of the Global Leadership Team.</p>
+        {{ partial "blockquote-diversity" . }}
 
-                <p>Harassment includes:</p>
+        <p>This code of conduct applies to all satRdays spaces, including
+          meetups, Twitter, Slack, mailing
+          lists, both online
+          and offline. Anyone who violates this code of conduct may be
+          sanctioned or expelled from these
+          spaces at the
+          discretion of the Global Leadership Team.</p>
 
-                <ul>
-                    <li>Offensive comments related to gender, gender identity and expression, sexual orientation,
-                        disability, mental
-                        illness, neuro(a)typicality, physical appearance, body size, age, race, or religion.</li>
-                    <li>Unwelcome comments regarding a person&rsquo;s lifestyle choices and practices, including those
-                        related to food,
-                        health, parenting, drugs, and employment.</li>
-                    <li>Deliberate misgendering or use of &lsquo;dead&rsquo; or rejected names.</li>
-                    <li>Gratuitous or off-topic sexual images or behaviour in spaces where they&rsquo;re not
-                        appropriate.</li>
-                    <li>Physical contact and simulated physical contact (eg, textual descriptions like &ldquo;hug&rdquo;
-                        or
-                        &ldquo;backrub&rdquo;) without consent or after a request to stop.</li>
-                    <li>Threats of violence.</li>
-                    <li>Incitement of violence towards any individual, including encouraging a person to commit suicide
-                        or to engage in
-                        self-harm.</li>
-                    <li>Deliberate intimidation.</li>
-                    <li>Stalking or following.</li>
-                    <li>Harassing photography or recording, including logging online activity for harassment purposes.
-                    </li>
-                    <li>Sustained disruption of discussion.</li>
-                    <li>Unwelcome sexual attention.</li>
-                    <li>Pattern of inappropriate social contact, such as requesting/assuming inappropriate levels of
-                        intimacy with
-                        others.</li>
-                    <li>Continued one-on-one communication after requests to cease.</li>
-                    <li>Deliberate &ldquo;outing&rdquo; of any aspect of a person&rsquo;s identity without their consent
-                        except as
-                        necessary to protect vulnerable people from intentional abuse.</li>
-                    <li>Publication of non-harassing private communication.</li>
-                </ul>
+        <p>Harassment includes:</p>
 
-                <p>SatRdays prioritizes marginalized people&rsquo;s safety over privileged people&rsquo;s comfort. The
-                    Global
-                    Leadership Team will not act on complaints regarding:</p>
+        <ul>
+          <li>Offensive comments related to gender, gender identity and
+            expression, sexual orientation,
+            disability, mental
+            illness, neuro(a)typicality, physical appearance, body size, age,
+            race, or religion.</li>
+          <li>Unwelcome comments regarding a person&rsquo;s lifestyle choices
+            and practices, including those
+            related to food,
+            health, parenting, drugs, and employment.</li>
+          <li>Deliberate misgendering or use of &lsquo;dead&rsquo; or rejected
+            names.</li>
+          <li>Gratuitous or off-topic sexual images or behaviour in spaces where
+            they&rsquo;re not
+            appropriate.</li>
+          <li>Physical contact and simulated physical contact (eg, textual
+            descriptions like &ldquo;hug&rdquo;
+            or
+            &ldquo;backrub&rdquo;) without consent or after a request to stop.
+          </li>
+          <li>Threats of violence.</li>
+          <li>Incitement of violence towards any individual, including
+            encouraging a person to commit suicide
+            or to engage in
+            self-harm.</li>
+          <li>Deliberate intimidation.</li>
+          <li>Stalking or following.</li>
+          <li>Harassing photography or recording, including logging online
+            activity for harassment purposes.
+          </li>
+          <li>Sustained disruption of discussion.</li>
+          <li>Unwelcome sexual attention.</li>
+          <li>Pattern of inappropriate social contact, such as
+            requesting/assuming inappropriate levels of
+            intimacy with
+            others.</li>
+          <li>Continued one-on-one communication after requests to cease.</li>
+          <li>Deliberate &ldquo;outing&rdquo; of any aspect of a person&rsquo;s
+            identity without their consent
+            except as
+            necessary to protect vulnerable people from intentional abuse.</li>
+          <li>Publication of non-harassing private communication.</li>
+        </ul>
 
-                <ul>
-                    <li>&lsquo;Reverse&rsquo; -isms, including &lsquo;reverse racism,&rsquo; &lsquo;reverse
-                        sexism,&rsquo; and
-                        &lsquo;cisphobia&rsquo;.</li>
-                    <li>Reasonable communication of boundaries, such as &ldquo;leave me alone,&rdquo; &ldquo;go
-                        away,&rdquo; or
-                        &ldquo;I&rsquo;m not discussing this with you.&rdquo;</li>
-                    <li>Communicating in a &lsquo;tone&rsquo; you don&rsquo;t find congenial.</li>
-                    <li>Criticizing racist, sexist, cissexist, or otherwise oppressive behavior or assumptions.</li>
-                </ul>
+        <p>SatRdays prioritizes marginalized people&rsquo;s safety over
+          privileged people&rsquo;s comfort. The
+          Global
+          Leadership Team will not act on complaints regarding:</p>
 
-                <h3 id="reporting">Reporting</h3>
+        <ul>
+          <li>&lsquo;Reverse&rsquo; -isms, including &lsquo;reverse
+            racism,&rsquo; &lsquo;reverse
+            sexism,&rsquo; and
+            &lsquo;cisphobia&rsquo;.</li>
+          <li>Reasonable communication of boundaries, such as &ldquo;leave me
+            alone,&rdquo; &ldquo;go
+            away,&rdquo; or
+            &ldquo;I&rsquo;m not discussing this with you.&rdquo;</li>
+          <li>Communicating in a &lsquo;tone&rsquo; you don&rsquo;t find
+            congenial.</li>
+          <li>Criticizing racist, sexist, cissexist, or otherwise oppressive
+            behavior or assumptions.</li>
+        </ul>
 
-                <p>If you are being harassed by a member/guest/participant of/at satRdays, notice that someone else is
-                    being harassed,
-                    or have any other concerns, please contact the Code of Conduct committee of the current event via <a
-                        href="mailto://coc.satrday.berlin@gmail.com">coc.satrday.berlin@gmail.com</a>
-                    or the Global Leadership Team via <a
-                        href="mailto://leadership@satrdays.org">leadership@satrdays.org</a>.
-                    Local incidences will be handled together with the local organisers. If the person who is harassing
-                    you is on the
-                    team, they will recuse themselves from handling your incident. We will respond as promptly as we
-                    can.
-                </p>
+        <h3 id="reporting">Reporting</h3>
 
-                <p>You also can write anonymous report <a href="https://goo.gl/forms/eZKUZSleYa6ysxOH2">here</a>.</p>
+        <p>If you are being harassed by a member/guest/participant of/at
+          satRdays, notice that someone else is
+          being harassed,
+          or have any other concerns, please contact the Code of Conduct
+          committee of the current event via <a
+            href="mailto://coc.satrday.berlin@gmail.com">coc.satrday.berlin@gmail.com</a>
+          or the Global Leadership Team via <a
+            href="mailto://leadership@satrdays.org">leadership@satrdays.org</a>.
+          Local incidences will be handled together with the local organisers.
+          If the person who is harassing
+          you is on the
+          team, they will recuse themselves from handling your incident. We will
+          respond as promptly as we
+          can.
+        </p>
 
-                <p>This code of conduct applies to satRdays spaces, but if you are being harassed by a
-                    member/guest/participant of/at
-                    satRdays outside our spaces, we still want to know about it. We will take all good-faith reports of
-                    harassment by
-                    satRdays members, especially the Global Leadership Team, seriously. This includes harassment outside
-                    our spaces and
-                    harassment that took place at any point in time. The Global Leadership Team reserves the right to
-                    exclude people
-                    from satRdays based on their past behavior, including behavior outside satRdays spaces and behavior
-                    towards people
-                    who are not part of satRdays.</p>
+        <p>You also can write anonymous report <a
+            href="https://goo.gl/forms/eZKUZSleYa6ysxOH2">here</a>.</p>
 
-                <p>In order to protect volunteers from abuse and burnout, we reserve the right to reject any report we
-                    believe to have
-                    been made in bad faith. Reports intended to silence legitimate criticism may be deleted without
-                    response.</p>
+        <p>This code of conduct applies to satRdays spaces, but if you are being
+          harassed by a
+          member/guest/participant of/at
+          satRdays outside our spaces, we still want to know about it. We will
+          take all good-faith reports of
+          harassment by
+          satRdays members, especially the Global Leadership Team, seriously.
+          This includes harassment outside
+          our spaces and
+          harassment that took place at any point in time. The Global Leadership
+          Team reserves the right to
+          exclude people
+          from satRdays based on their past behavior, including behavior outside
+          satRdays spaces and behavior
+          towards people
+          who are not part of satRdays.</p>
 
-                <p>We will respect confidentiality requests for the purpose of protecting victims of abuse. At our
-                    discretion, we may
-                    publicly name a person about whom we&rsquo;ve received harassment complaints, or privately warn
-                    third parties about
-                    them, if we believe that doing so will increase the safety of satRdays members or the general
-                    public. We will not
-                    name harassment victims without their affirmative consent.</p>
+        <p>In order to protect volunteers from abuse and burnout, we reserve the
+          right to reject any report we
+          believe to have
+          been made in bad faith. Reports intended to silence legitimate
+          criticism may be deleted without
+          response.</p>
 
-                <h3 id="consequences">Consequences</h3>
+        <p>We will respect confidentiality requests for the purpose of
+          protecting victims of abuse. At our
+          discretion, we may
+          publicly name a person about whom we&rsquo;ve received harassment
+          complaints, or privately warn
+          third parties about
+          them, if we believe that doing so will increase the safety of satRdays
+          members or the general
+          public. We will not
+          name harassment victims without their affirmative consent.</p>
 
-                <p>Participants asked to stop any harassing behavior are expected to comply immediately.</p>
+        <h3 id="consequences">Consequences</h3>
 
-                <p>If a participant engages in harassing behavior, the Global Leadership Team may take any action they
-                    deem
-                    appropriate, up to and including expulsion from all satRdays spaces and identification of the
-                    participant as a
-                    harasser to other satRdays members or the general public.</p>
+        <p>Participants asked to stop any harassing behavior are expected to
+          comply immediately.</p>
 
-                <p>This policy is licensed under the Creative Commons Zero license.</p>
-            </div>
-        </div>
+        <p>If a participant engages in harassing behavior, the Global Leadership
+          Team may take any action they
+          deem
+          appropriate, up to and including expulsion from all satRdays spaces
+          and identification of the
+          participant as a
+          harasser to other satRdays members or the general public.</p>
 
-    </section>
+        <p>This policy is licensed under the Creative Commons Zero license.</p>
+      </div>
+    </div>
+
+  </section>
 </div>

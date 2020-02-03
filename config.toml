@@ -92,8 +92,12 @@ googleAnalytics = ""
     title = "satRday Berlin"
     subtitle = "June 2020"
     bg = true
-    buttonText = "Learn more"
-    buttonTarget = "#services" # default: #services
+    ctaEnable = true
+    ctaButtonText = "Learn more"
+    ctaButtonTarget = "#services" # default: #services
+    ticketsEnable = false
+    ticketsButtonText = "Register"
+    ticketsButtonTarget = "#tickettailor"
 
 
   # About [Services] section
@@ -234,7 +238,9 @@ googleAnalytics = ""
     subtitle = "The people putting it together"
     bg = false
     description = ""
-    speakers = ""
+
+  [params.speakers]
+    enable = false
   
   # Client section
   [params.clients_list]

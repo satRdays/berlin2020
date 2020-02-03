@@ -55,8 +55,8 @@
       {{ partial "diversity.html" . }}
     {{ end }}
 
-    {{ if .Site.Params.inclusion.enable }}
-      {{ partial "inclusion.html" . }}
+    {{ if .Site.Params.conduct.enable }}
+    {{ partial "code-of-conduct-preview" . }}
     {{ end }}
 
     {{ if .Site.Params.footer.enable }}

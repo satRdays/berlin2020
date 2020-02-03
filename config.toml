@@ -262,14 +262,15 @@ googleAnalytics = ""
       logo = "jumpingrivers.png"
       link = "https://www.jumpingrivers.com/"
   
-  [params.diversity]
+  [params.conduct]
     enable = true
     title = "Our Code of conduct"
-    bg = true
-  
-  [params.inclusion]
+    bg = false
+
+  [params.diversity]
     enable = true
-    bg = true
+    title = "Our Commitment to Diversity and Inclusion"
+    bg = false
 
   # Contact section
   [params.contact]

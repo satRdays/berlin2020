@@ -709,7 +709,7 @@ canvas {
 
 @media(max-width: 500px) {
     p {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
     header .intro-text .intro-lead-in {
         font-size: 2em;
@@ -768,6 +768,18 @@ blockquote {
 .team-member img {
     height: 20vh;
     width: 20vh;
+}
+
+@media(max-width: 768px) {
+    .team-member {
+        display: block;
+    }
+    #team .flexbox {
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .team-bio a:hover {

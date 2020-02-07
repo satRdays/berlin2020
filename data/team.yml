@@ -86,14 +86,14 @@ members:
       - - fa-github
         - "github.com/noatmair"
 
-  # - name: "Sonia Boender"
-  #   img: "sonia.jpeg"
-  #   bio: "Infectious Disease Epidemiologist & Public Health Researcher at the [Robert Koch Institute](https://www.rki.de/) & [European Centre for Disease Prevention and Control](https://ecdc.europa.eu)"
-  #   social:
-  #     - - fa-twitter
-  #       - "https://twitter.com/SoniaBoender"
-  #     - - fa-linkedin
-  #       - "https://www.linkedin.com/in/soniaboender/"
+  - name: "Sonia Boender"
+    img: "sonia.jpg"
+    bio: "Infectious Disease Epidemiologist & Public Health Researcher at the [Robert Koch Institute](https://www.rki.de/) & [European Centre for Disease Prevention and Control](https://ecdc.europa.eu)"
+    social:
+      - - fa-twitter
+        - "https://twitter.com/SoniaBoender"
+      - - fa-linkedin
+        - "https://www.linkedin.com/in/soniaboender/"
 
   - name: "Steve Cunningham"
     img: "steve.jpeg"
